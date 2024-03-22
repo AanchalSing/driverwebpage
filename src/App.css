@@ -1,0 +1,117 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Registration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.input-field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 8px;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  margin-top: -13px;
+  margin-left: 10px;
+}
+.input-field {
+  margin-top: 30px;
+}
+
+.input-field input {
+  outline: none;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid rgb(192, 191, 191);
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field input:focus {
+  border-color: #4285f4;
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.5);
+}
+
+.input-field input[type="date"]:valid {
+  color: #333;
+}
+
+.custom-input::placeholder {
+  color: lightgrey; /* Set the placeholder color */
+}
+
+.regPgDate {
+  color: #c6c6c6 !important;
+}
+/* view page button */
+/* a {
+  text-decoration: none;
+} */
+.accept {
+  color: #fff;
+  background: skyblue;
+  padding: 10px 15px; /* Adjust padding */
+  border: none;
+  border-radius: 20px; /* Adjust border-radius to make the buttons rounded */
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+.deny {
+  color: #fff;
+  background: tomato;
+  padding: 10px 15px; /* Adjust padding */
+  border: none;
+  border-radius: 20px; /* Adjust border-radius to make the buttons rounded */
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+
+.accept:hover {
+  background: rgb(101, 171, 199);
+}
+.deny:hover {
+  background: rgb(194, 114, 100);
+}
+
+.accept .icon,
+.deny .icon {
+  margin-right: 5px; /* Adjust spacing between icon and text */
+  border-radius: 50%; /* Make the icon circular */
+  padding: 5px; /* Adjust padding to make the icon circular */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Set background color for the circular icon */
+}
+
+.accept .icon svg,
+.deny .icon svg {
+  font-size: 18px; /* Adjust icon size */
+}
+
+.accept .icon:hover,
+.deny .icon:hover {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Set hover background color for the circular icon */
+}
